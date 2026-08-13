@@ -1,1 +1,89 @@
+/* Usando as cores fornecidas: Principal #8932a1 e Secundária #1a0d54 */
 
+body {
+    max-width: 100vw;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0628; /* Fundo bem escuro para o tema horror */
+}
+
+header {
+    background-color: #8932a1; /* Cor Principal */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px solid #1a0d54;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    background-color: #1a0d54; /* Cor Secundária */
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    border: 2px solid #8932a1;
+    border-radius: 10px;
+    background-color: #0d0628;
+    margin: 15px;
+    gap: 16px;
+    padding: 20px;
+    flex: 1 1 300px; /* Ajusta o tamanho das caixas */
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Efeito de hover para parecer um jogo */
+article:hover {
+    transform: scale(1.03);
+    border-color: #ff0000; /* Vermelho alerta ao passar o mouse */
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #8932a1;
+    object-fit: cover;
+}
+
+.artigo-autor {
+    font-weight: bold;
+    color: #8932a1;
+    font-size: 0.9em;
+}
+
+.artigo-fonte {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #cccccc;
+}
+
+button {
+    background-color: #8932a1;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1a0d54;
+    border: 1px solid #8932a1;
+}
